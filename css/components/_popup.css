@@ -1,0 +1,174 @@
+.popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+    z-index: 100;
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.8s ease 0s;
+}
+.popup:target .contacts__order{
+    z-index: -1;
+}
+.popup-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+.popup-content__body{
+    background-color: #DAF4FF;
+    border-radius: 30px;
+    width: 670px;
+    height: 641px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px,-100%);
+}
+
+
+.popup:target .popup-content__body{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.popup-title{
+    font-family: 'Muller-bold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    color: #000000;
+    max-width: 315px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.popup-bg{
+    position: absolute;
+    right: 0;
+    top: 130px;
+    z-index: -1;
+}
+.popup__container{
+    padding-top: 60px;
+    padding-left: 77px;
+    position: relative;
+}
+.popup-close{
+    position: absolute;
+    color: #EC2121;
+    width: 16px;
+    height: 16px;
+    right: 40px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.popup-appeal{
+    font-family: 'Muller-light';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    color: #6B6E72;
+    margin: 0;
+    margin-bottom: 35px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    gap: 20px;
+}
+.form input{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    outline: none;
+    border: transparent;
+    height: 50px;
+}
+::placeholder{
+    font-family: 'Geometria-light';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #747474;
+    padding-left: 18px;
+}
+.form-btn{
+    height: 50px;
+    z-index: 1;
+    margin-top: 125px;
+    margin-bottom: 36px;
+}
+.confidentiality{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-items: flex-start;
+}
+.confidentiality__text{
+    font-family: 'Muller-light';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 113.5%;
+    color: #6B6E72;
+    max-width: 216px;
+}
+.confidentiality-link{
+    color: #1FA1FF;
+    text-decoration: underline;
+}
+.confidentiality-check{
+    display: none;
+}
+.checkbox-label{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.checkbox-label span{
+    width: 330px;
+}
+.checkbox-item:checked + .checkbox-label::after{
+    transform: scale(1);
+    transition: 0.5s ease 0s;
+}
+.checkbox-label::before{
+    content: '';
+    flex: 0 0 28px;
+    height: 28px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}
+.checkbox-label::after{
+    content: '';
+    position: absolute;
+    background-image: url(/img/mark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 27px;
+    height: 17px;
+    top: 19px;
+    transform: scale(0);
+    transition: 0.5s ease 0s;
+}
+.checkbox-item{
+    display: none;
+}
+.js-validate-error-label{
+    position: absolute;
+    bottom: 340px;
+}
+.js-validate-error-label:nth-child(2){
+    bottom: 265px;
+}

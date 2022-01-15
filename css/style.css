@@ -1,0 +1,49 @@
+/* IMPORTS */
+@import url(components/_variables.css);
+@import url(components/_fonts.css);
+@import url(components/_header.css);
+@import url(components/_intro.css);
+@import url(components/_actions.css);
+@import url(components/_sub.css);
+@import url(components/_speaker.css);
+@import url(components/_examples.css);
+@import url(components/_download.css);
+@import url(components/_security.css);
+@import url(components/_review.css);
+@import url(components/_specialists.css);
+@import url(components/_projects.css);
+@import url(components/_help.css);
+@import url(components/_guarantess.css);
+@import url(components/_popup.css);
+@import url(components/_popup-confidentiality.css);
+@import url(components/_survey.css);
+@import url(components/_usefulness.css);
+@import url(components/_footer.css);
+/* STYLES */
+body{
+    font-family: 'Geometria-light';
+}
+.container{
+    max-width: 1302px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.interior-container{
+    padding-left: 79px;
+}
+.section-title{
+    font-family: 'Geometria-bold';
+    font-weight: 700;
+    line-height: 120%;
+    color: #000000;
+}
+@media (max-width: 768px) {
+    .interior-container{
+        padding-left: 45px;
+    }
+    .container{
+        width: 670px;
+    }
+}

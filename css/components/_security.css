@@ -1,0 +1,137 @@
+.security{
+    margin-bottom: 130px;
+}
+.security-items{
+    display: flex;
+    justify-content: space-between;
+}
+.security-items__item{
+    background-color: #1FA1FF;
+    border-radius: 30px;
+    position: relative;
+    height: 575px;
+    width: 645px;
+    margin-bottom: 66px;
+}
+.security-item-image{
+    position: absolute;
+    left: 0;
+    top: -175px;
+}
+.security-items__container{
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 82%;
+    display: flex;
+    margin-bottom: 66px;
+}
+.security-item-title{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: end;
+    width: 350px;
+}
+/*.security-item-title{
+    position: relative;
+    top: 335px;
+}*/
+.security-item-title__item{
+    font-family: 'Geometria-bold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.security-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.security-list__item{
+    font-family: 'Geometria-medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.security-btn{
+    padding-left: 80px;
+}
+.security-btn__item{
+    width: 306px;
+    height: 46px;
+}
+.security-item-two-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.security-items-indent{
+    padding-top: 130px;
+}
+.security-list-two{
+    gap: 30px;
+}
+.security-items-two__item{
+    background-color: #FF5F5F;
+    border-radius: 30px;
+    position: relative;
+    height: 575px;
+    width: 645px;
+}
+.security-items-two__container{
+    padding-top: 52px;
+    padding-bottom: 52px;
+    padding-left: 73px;
+    padding-right: 80px;
+    height: 82%;
+    display: flex;
+}
+.security-list__item-two{
+    width: 173px;
+}
+.security-btn-two{
+    display: none;
+    padding: 0;
+}
+@media (max-width: 768px) {
+    .security-item-title__item{
+        font-size: 25px;
+        max-width: 230px;
+    }
+    .security-items__item{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .security-items-indent{
+        padding: 0;
+    }
+    .security-items-two__item{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .security-items{
+        flex-direction: column;
+    }
+    .security-btn{
+        display: none;
+    }
+    .security-btn-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .security-item-title__item-two{
+        max-width: 250px;
+    }
+    .security-items-two__container{
+        padding-right: 95px;
+        padding-left: 80px;
+    }
+}

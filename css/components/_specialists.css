@@ -1,0 +1,152 @@
+.specialists-box{
+    background: #1FA1FF;
+    border-radius: 30px;
+    position: relative;
+}
+.specialists__container{
+    position: relative;
+}
+.specialists-box__container{
+    padding-top: 68px;
+    padding-left: 78px;
+    padding-bottom: 200px;
+}
+.specialists-title__item{
+    font-family: 'Geometria-bold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 250px;
+    margin: 0;
+}
+.our-spec-bg{
+    position: absolute;
+    bottom: 0;
+    left: 230px;
+}
+.spec-photo{
+    background-image: url(/img/spec1.png);
+    background-position: center;
+    background-size: cover;
+    width: 252px;
+    height: 225px;
+    margin-bottom: 28px;
+}
+.spec-list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    bottom: 200px;
+    padding: 0;
+    padding-left: 75px;
+    padding-right: 45px;
+}
+.spec-list__item{
+    position: relative;
+}
+.spec-list__item::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 445px;
+    left: 0;
+    bottom: 0;
+    background-color: #B0B1B5;
+    z-index: -1;
+}
+.spec-item-two{
+    position: relative;
+}
+.spec-item-two::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 380px;
+    left: 0;
+    bottom: 0;
+    background-color: #B0B1B5;
+    z-index: -1;
+}
+.spec-name{
+    font-family: 'Muller-extra';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #333333;
+    max-width: 250px;
+    margin: 0;
+    margin-bottom: 36px;
+}
+.speciality__item{
+    font-family: 'Muller-regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140.1%;
+    letter-spacing: 0.02em;
+    color: #00222B;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.speciality__item:last-child{
+    margin: 0;
+}
+.speciality__item span{
+    font-weight: 800;
+}
+.spec-text{
+    padding-left: 35px;
+    width: 250px;
+}
+.spec-two{
+    background-image: url(/img/spec2.png);
+    background-position: center;
+    background-size: cover;
+    width: 252px;
+    height: 225px;
+    margin-bottom: 28px;
+}
+.spec-three{
+    background-image: url(/img/spec3.png);
+    background-position: center;
+    background-size: cover;
+    width: 252px;
+    height: 225px;
+    margin-bottom: 28px;
+}
+.spec-four{
+    background-image: url(/img/spec-4.png);
+    background-position: center;
+    background-size: cover;
+    width: 252px;
+    height: 225px;
+    margin-bottom: 28px;
+}
+@media (max-width: 768px) {
+    .specialists-title__item{
+        font-size: 25px;
+        max-width: 180px;
+    }
+    .spec-list{
+        flex-wrap: wrap;
+        align-items: baseline;
+        bottom: 115px;
+        padding-right: 0;
+        padding-left: 45px;
+    }
+    .spec-list__item:nth-child(3){
+        top: 75px;
+    }
+    .specialists-box__container{
+        padding-top: 35px;
+        padding-left: 55px;
+        padding-bottom: 250px;
+    }
+    .our-spec-bg{
+        width: 525px;
+        bottom: 0;
+        left: 95px;
+    }
+}

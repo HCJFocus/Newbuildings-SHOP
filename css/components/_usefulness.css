@@ -1,0 +1,108 @@
+.usefulness{
+    margin-bottom: 150px;
+}
+.usefulness-title{
+    font-size: 30px;
+    max-width: 350px;
+}
+.usefulness-box{
+    background-color: #DAF4FF;
+    border-radius: 30px;
+}
+.usefulness-title{
+    margin: 0;
+    margin-bottom: 75px;
+}
+.usefulness-box__container{
+    padding-left: 80px;
+    padding-top: 72px;
+    padding-right: 123px;
+}
+.usefulness-examples-item__title{
+    font-family: 'Geometria-medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+    max-width: 190px;
+    margin: 0;
+}
+.usefulness-examples{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 305px;
+}
+.usefulness-examples-item-one{
+    position: relative;
+    right: 78px;
+    top: 29px;
+}
+.usefulness-examples-item-images{
+    position: relative;
+    top: 55px;
+}
+.usefulness-examples-item-two{
+    position: absolute;
+    z-index: 1;
+}
+.usefulness-examples-item-three{
+    position: absolute;
+    top: 95px;
+    right: 119px;
+}
+.usefulness-item-four{
+    position: relative;
+    top: 21px;
+}
+.usefulness-examples-item-images-two{
+    display: flex;
+}
+.usefulness-examples-item-images-two__items{
+    display: flex;
+    flex-direction: column;
+}
+.usefulness-item-1{
+    position: relative;
+    top: 30px;
+    right: 24px;
+}
+.usefulness-item-1-size{
+    width: 65px;
+    height: 77px;
+}
+.usefulness-item-2{
+    width: 38px;
+    height: 60px;
+    position: relative;
+    left: 3px;
+}
+.usefulness-item-3{
+    position: relative;
+    right: 20px;
+    bottom: 12px;
+}
+.usefulness-item-4{
+    position: relative;
+    width: 79px;
+    height: 93px;
+    bottom: 45px;
+    right: 10px;
+}
+@media (max-width: 768px) {
+    .usefulness-examples{
+        flex-wrap: wrap;
+        height: auto;
+        height: 685px;
+    }
+    .usefulness-examples-item{
+        margin-bottom: 100px;
+    }
+    .usefulness-box__container{
+        padding-left: 47px;
+        padding-top: 42px;
+    }
+    .usefulness-title{
+        font-size: 25px;
+    }
+}

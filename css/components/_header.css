@@ -1,0 +1,117 @@
+.header{
+    margin-bottom: 116px;
+}
+.header__container{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__container-item-1{
+    display: flex;
+    align-items: center;
+}
+.header__container-item-2{
+    display: flex;
+    align-items: center;
+}
+.phone-number{
+    display: flex;
+    flex-direction: column;
+}
+.phone-number__item{
+    font-family: 'Geometria-bold';
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 30px;
+   color: #393939;
+}
+.phone-number__descr{
+    font-family: 'Geometria-light';
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 13px;
+    color: #393939;
+}
+.header__logo{
+    margin-right: 52px;
+}
+.header__logo img{
+    width: 300px;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.contacts__order{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contacts__item{
+    font-family: 'Geometria-medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.contacts__order .order-phone{
+    width: 18px;
+    height: 16px;
+    background-color: #EC2121;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 10px;
+}
+.contacts__writing{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contacts__writing-item-1{
+    width: 18px;
+    height: 16px;
+    background-color: #54D6FF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+.contacts__writing-item-2{
+    width: 18px;
+    height: 16px;
+    background-color: #37CB2A;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .container{
+        width: 673px;
+    }
+    .contacts{
+        flex-direction: column;
+    }
+    .phone-number__item{
+        font-size: 19px;
+    }
+    .header__logo{
+        margin-right: 20px;
+    }
+    .header__container{
+        align-items: flex-start;
+    }
+    .contacts{
+        align-items: normal;
+        gap: 15px;
+    }
+    .contacts__writing{
+        gap: 15px;
+    }
+}
